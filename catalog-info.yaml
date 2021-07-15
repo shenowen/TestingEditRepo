@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: 'prtestapp'
+  description: ''
+  annotations:
+    github.com/project-slug: 'AAInternal/prtestapp'
+    argocd/app-name: 'prtestapp-dev'
+    backstage.io/kubernetes-label-selector: 'backstage.io/kubernetes-id=prtestapp'
+  tags:
+    - react
+    - node
+spec:
+  type: website
+  lifecycle: experimental
+  owner: 'tempValueOwner'
